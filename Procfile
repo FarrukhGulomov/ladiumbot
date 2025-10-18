@@ -1,1 +1,1 @@
-web: python mvp_bot.py
+worker: python -u mvp_bot.py
