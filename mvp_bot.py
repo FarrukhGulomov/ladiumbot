@@ -12,7 +12,21 @@ from dotenv import load_dotenv
 from datetime import datetime
 
 # Load environment variables
-load_dotenv()
+
+# Load environment variables
+if os.path.exists(".env"):
+    load_dotenv()
+    print("📁 Using configuration from .env file")
+else:
+    print("🌐 Using environment variables from Railway")
+
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") or os.getenv("BOT_TOKEN")
+ADMIN_USER_ID = int(os.getenv("ADMIN_USER_ID", "0"))
+UZUM_SHOP_URL = os.getenv("UZUM_SHOP_URL", "https://uzum.uz/ru/shop/ladium")
+
+if not BOT_TOKEN:
+    raise ValueError("❌ TELEGRAM_BOT_TOKEN not found in environment variables")
+
 
 # Configure logging
 logging.basicConfig(
