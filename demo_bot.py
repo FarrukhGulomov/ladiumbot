@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""
+Demo version of Uzum Shop Bot
+This shows you exactly what the bot will look like without needing real tokens
+"""
+
+import logging
+from datetime import datetime
+
+# Configure logging
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
+logger = logging.getLogger(__name__)
+
+def show_demo():
+    """Show what the bot will look like"""
+    print("=" * 60)
+    print("🤖 UZUM SHOP TELEGRAM BOT - DEMO")
+    print("=" * 60)
+    print()
+    
+    print("📱 WHAT USERS WILL SEE:")
+    print("-" * 30)
+    print()
+    
+    print("🎉 Добро пожаловать в наш магазин Ladium на Uzum!")
+    print()
+    print("Я помогу вам:")
+    print("• Получить информацию о наших товарах")
+    print("• Ответить на ваши вопросы")
+    print("• Связать вас с нашим магазином")
+    print()
+    print("Нажмите кнопку ниже, чтобы перейти в наш магазин:")
+    print()
+    print("┌─────────────────────────────────────────┐")
+    print("│  🛍️ Перейти в магазин                  │")
+    print("└─────────────────────────────────────────┘")
+    print("┌─────────────────────────────────────────┐")
+    print("│  ❓ Задать вопрос                       │")
+    print("└─────────────────────────────────────────┘")
+    print("┌─────────────────────────────────────────┐")
+    print("│  📞 Связаться с нами                   │")
+    print("└─────────────────────────────────────────┘")
+    print()
+    
+    print("🔧 ADMIN FEATURES:")
+    print("-" * 30)
+    print()
+    print("When users ask questions, you'll receive:")
+    print()
+    print("🔔 Новый вопрос от пользователя:")
+    print()
+    print("👤 Пользователь: John Doe")
+    print("📝 Username: @john_doe")
+    print("🆔 ID: 123456789")
+    print()
+    print("❓ Вопрос:")
+    print("Hello, do you have this product in stock?")
+    print()
+    print("⏰ Время: 2024-01-15 14:30:00")
+    print()
+    
+    print("📊 STATISTICS COMMAND (/stats):")
+    print("-" * 30)
+    print()
+    print("📊 Статистика бота:")
+    print()
+    print("👥 Всего пользователей: 25")
+    print("❓ Вопросов в очереди: 3")
+    print("🕒 Время: 2024-01-15 14:30:00")
+    print()
+    print("📝 Последние пользователи:")
+    print("• John (@john_doe)")
+    print("• Sarah (@sarah_smith)")
+    print("• Mike (@mike_wilson)")
+    print()
+    
+    print("📢 BROADCAST COMMAND (/broadcast):")
+    print("-" * 30)
+    print()
+    print("You type: /broadcast 🎉 New products available!")
+    print()
+    print("Bot sends to all users:")
+    print("🎉 New products available!")
+    print()
+    print("You receive report:")
+    print("📊 Отчет о рассылке:")
+    print()
+    print("✅ Отправлено: 23")
+    print("❌ Ошибок: 2")
+    print("📝 Сообщение: 🎉 New products available!")
+    print()
+    
+    print("🛍️ SHOP REDIRECTION:")
+    print("-" * 30)
+    print()
+    print("When users click '🛍️ Перейти в магазин':")
+    print("→ Opens: https://uzum.uz/ru/shop/ladium")
+    print("→ Users can browse and buy your products")
+    print()
+    
+    print("📞 CONTACT INFORMATION:")
+    print("-" * 30)
+    print()
+    print("When users click '📞 Связаться с нами':")
+    print()
+    print("📞 Способы связи:")
+    print()
+    print("🛍️ Наш магазин: Uzum.uz - Ladium")
+    print("📱 Telegram: @your_telegram_username")
+    print("📧 Email: your_email@example.com")
+    print("☎️ Телефон: +998 XX XXX XX XX")
+    print()
+    print("🕒 Время работы:")
+    print("Пн-Пт: 9:00 - 18:00")
+    print("Сб-Вс: 10:00 - 16:00")
+    print()
+    
+    print("=" * 60)
+    print("🚀 TO GET STARTED:")
+    print("=" * 60)
+    print()
+    print("1. Get bot token from @BotFather")
+    print("2. Get your user ID from @userinfobot")
+    print("3. Edit simple_test_bot.py with your tokens")
+    print("4. Run: py simple_test_bot.py")
+    print("5. Test with your bot on Telegram!")
+    print()
+    print("📖 See SETUP_INSTRUCTIONS.md for detailed steps")
+    print()
+    print("🎉 Your professional Uzum shop bot is ready!")
+
+if __name__ == '__main__':
+    show_demo()
